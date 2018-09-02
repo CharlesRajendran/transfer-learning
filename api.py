@@ -16,4 +16,4 @@ def get_top_predictions():
     return {"predictions": selected_list}
 
 #run(reloader=True,debug=True)
-run()
+run(host='0.0.0.0', port=os.environ.get('PORT', '5000'))
